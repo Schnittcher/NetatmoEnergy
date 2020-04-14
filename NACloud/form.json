@@ -1,0 +1,9 @@
+{
+	"elements":
+	[
+	],
+	"actions":
+	[
+		{ "type": "Button", "label": "Register", "onClick": "echo NA_Register($id);" }
+	]
+}

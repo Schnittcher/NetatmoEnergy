@@ -1,0 +1,18 @@
+{
+    "id": "{0F90DCFC-B606-4D94-A579-49AD85AC5A78}",
+    "name": "NAConfigurator",
+    "type": 4,
+    "vendor": "Netatmo",
+    "aliases": [
+        "Netatmo Energy Konfigurator"
+    ],
+    "parentRequirements": [
+        "{2FD9D574-BB1D-EE43-6B7F-304C8940DBD9}"
+    ],
+    "childRequirements": [],
+    "implemented": [
+        "{CE473B2A-C23E-9561-BC09-6A09E286C22D}"
+    ],
+    "prefix": "HC",
+    "url": "https://deinsmarthome.info"
+}

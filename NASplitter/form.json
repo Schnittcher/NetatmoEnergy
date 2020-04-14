@@ -1,0 +1,16 @@
+{
+    "elements": [
+		{
+            "type": "ValidationTextBox",
+            "name": "HomeID",
+            "caption": "Home ID"
+        },
+        {
+            "name": "UpdateInterval",
+            "type": "IntervalBox",
+            "caption": "Seconds"
+        }
+	],
+    "actions": [],
+    "status": []
+}

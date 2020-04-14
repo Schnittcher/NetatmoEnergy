@@ -1,0 +1,18 @@
+{
+    "id": "{FB29D1C4-26CF-4F36-9ED2-EDDEA87977DC}",
+    "name": "NARoom",
+    "type": 3,
+    "vendor": "Netatmo",
+    "aliases": [
+        "Netatmo Room"
+    ],
+    "parentRequirements": [
+        "{2FD9D574-BB1D-EE43-6B7F-304C8940DBD9}"
+    ],
+    "childRequirements": [],
+    "implemented": [
+        "{CE473B2A-C23E-9561-BC09-6A09E286C22D}"
+    ],
+    "prefix": "NA",
+    "url": "https://deinsmarthome.info"
+}

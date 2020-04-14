@@ -1,0 +1,21 @@
+{
+    "id": "{19718E4A-B0D5-21ED-2106-B48BB368C14E}",
+    "name": "NASplitter",
+    "type": 2,
+    "vendor": "Netatmo",
+    "aliases": [
+        "Netatmo Splitter"
+    ],
+    "parentRequirements": [
+        "{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}"
+    ],
+    "childRequirements": [
+        "{CE473B2A-C23E-9561-BC09-6A09E286C22D}"
+    ],
+    "implemented": [
+        "{F3B97E8C-E951-4FF3-8C1E-A8D9CB2A1FA1}",
+        "{2FD9D574-BB1D-EE43-6B7F-304C8940DBD9}"
+    ],
+    "prefix": "NA",
+    "url": "https://deinsmarthome.info"
+}

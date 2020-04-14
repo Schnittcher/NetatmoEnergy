@@ -1,0 +1,12 @@
+{
+    "translations": {
+        "de": {
+            "Schedules": "Zeitpläne",
+            "schedule": "Zeitplan",
+            "away": "außer Haus",
+            "hg": "Frostschutz",
+            "Mode": "Modus",
+            "Please use the Schedules Variable to selcet a Schedule": "Verwenden Sie die Zeitplanvariable, um einen Zeitplan auszuwählen"
+        }
+    }
+}

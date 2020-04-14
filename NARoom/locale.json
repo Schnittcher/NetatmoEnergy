@@ -1,0 +1,21 @@
+{
+    "translations": {
+        "de": {
+            "Room ID": "Raum ID",
+            "Measured Temperature": "Gemessene Temperatur",
+            "Setpoint Temperature": "Soll Temperatur",
+            "manual": "Manuell",
+            "home": "Zuhause",
+            "max": "Max",
+            "off": "Aus",
+            "schedule": "Zeitplan",
+            "away": "außer Haus",
+            "hg": "Frostschutz",
+            "Mode": "Modus",
+            "Reachable": "Erreichbar",
+            "Anticipating": "Vorwegnehmen",
+            "Open Windows": "Geöffnete Fenster",
+            "This mode can not be set": "Dieser Modus kann nicht eingestellt werden"
+        }
+    }
+}

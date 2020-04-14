@@ -1,0 +1,43 @@
+{
+    "elements": [
+      {
+         "type": "ValidationTextBox",
+         "name": "HomeID",
+         "caption": "Home ID"
+     }
+    ],
+    "actions": [     {
+        "type":"Configurator",
+        "name":"Configurator",
+        "caption":"Configurator",
+        "rowCount":15,
+        "delete":false,
+        "sort":{
+           "column":"DisplayName",
+           "direction":"ascending"
+        },
+        "columns":[
+           {
+              "caption":"Name",
+              "name":"DisplayName",
+              "width":"auto"
+           },
+           {
+            "caption":"Device ID",
+            "name":"DeviceID",
+            "width":"250px"
+         },
+           {
+              "caption":"Hardware Type",
+              "name":"hwtype",
+              "visible":true,
+              "width":"100px"
+           }
+        ],
+        "values":[
+
+        ]
+     }
+    ],
+    "status": []
+}

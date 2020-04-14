@@ -1,0 +1,18 @@
+{
+    "id": "{E09148EF-7EA2-AE8D-7244-5B0BB30F8534}",
+    "name": "NACloud",
+    "type": 1,
+    "vendor": "Netatmo",
+    "aliases": [
+        "Netatmo Cloud"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [
+        "{F3B97E8C-E951-4FF3-8C1E-A8D9CB2A1FA1}"
+    ],
+    "implemented": [
+        "{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}"
+    ],
+    "prefix": "NA",
+    "url": "https://deinsmarthome.info"
+}

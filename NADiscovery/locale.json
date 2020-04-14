@@ -1,0 +1,11 @@
+{
+    "translations": {
+        "de": {
+            "Configurator": "Konfigurator",
+            "Home": "Zuhause",
+            "Rooms": "Räume",
+            "Devices": "Geräte",
+            "Country": "Land"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "{82F47A48-64F6-A10F-0024-9D21967814EB}",
+    "author": "Kai Schnittcher",
+    "name": "Netatmo Energy",
+    "url": "https://deinsmarthome.info",
+    "compatibility": {
+        "version": "5.2"
+    },
+    "version": "1.0",
+    "build": 0,
+    "date": 0
+}

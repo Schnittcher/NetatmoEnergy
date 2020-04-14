@@ -1,0 +1,39 @@
+{
+    "actions": [
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "Configurator",
+            "delete": false,
+            "sort": {
+                "column": "home",
+                "direction": "ascending"
+            },
+            "columns": [
+                  {
+                    "caption": "Home",
+                    "name": "home",
+                    "width": "auto"
+                  },
+                  {
+                    "caption": "Country",
+                    "name": "country",
+                    "width": "250px"
+                  },
+                  {
+                    "caption": "Rooms",
+                    "name": "rooms",
+                    "width": "250px"
+                  },
+                  {
+                    "caption": "Devices",
+                    "name": "devices",
+                    "width": "250px"
+                  }
+
+
+            ],
+            "values": []
+        }
+    ]
+}

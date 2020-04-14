@@ -1,0 +1,16 @@
+{
+    "id": "{B3186530-616A-6768-AA32-57B03335D4A7}",
+    "name": "NADiscovery",
+    "type": 5,
+    "vendor": "Netatmo",
+    "aliases": [],
+    "parentRequirements": [
+        "{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}"
+    ],
+    "childRequirements": [],
+    "implemented": [
+        "{F3B97E8C-E951-4FF3-8C1E-A8D9CB2A1FA1}"
+    ],
+    "prefix": "NA",
+    "url": "https://deinsmarthome.info"
+}

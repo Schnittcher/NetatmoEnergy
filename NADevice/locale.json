@@ -1,0 +1,13 @@
+{
+    "translations": {
+        "de": {
+            "Module ID": "Modul ID",
+            "Firmware Revision": "Firmware Revision",
+            "RF Strength": "RF Stärke",
+            "Wifi Strenght": "Wifi Stärke",
+            "Battery Level": "Batterie Level",
+            "Battery State": "Batterie Status",
+            "Bridge": "Bridge"
+        }
+    }
+}

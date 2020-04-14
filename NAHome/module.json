@@ -1,0 +1,18 @@
+{
+    "id": "{C945480C-F0C3-3D03-A8F1-7651B5C747BF}",
+    "name": "NAHome",
+    "type": 3,
+    "vendor": "Netatmo",
+    "aliases": [
+        "Netatmo Home"
+    ],
+    "parentRequirements": [
+        "{2FD9D574-BB1D-EE43-6B7F-304C8940DBD9}"
+    ],
+    "childRequirements": [],
+    "implemented": [
+        "{CE473B2A-C23E-9561-BC09-6A09E286C22D}"
+    ],
+    "prefix": "NA",
+    "url": "https://deinsmarthome.info"
+}
