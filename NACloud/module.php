@@ -80,6 +80,7 @@ class NACloud extends IPSModule
 
             $this->SendDebug('ProcessOAuthData', "OK! Let's save the Refresh Token permanently", 0);
             $this->WriteAttributeString('Token', $token);
+            IPS_ApplyChanges($this->InstanceID);
         } else {
 
                 //Just print raw post data!
