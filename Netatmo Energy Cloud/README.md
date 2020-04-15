@@ -1,66 +1,30 @@
-# NACloud
-Beschreibung des Moduls.
+# Netatmo Energy Cloud
+Stellt die Verbindung über OAuth mit der Netatmo Energy Cloud her.
 
 ### Inhaltsverzeichnis
 
 1. [Funktionsumfang](#1-funktionsumfang)
 2. [Voraussetzungen](#2-voraussetzungen)
-3. [Software-Installation](#3-software-installation)
-4. [Einrichten der Instanzen in IP-Symcon](#4-einrichten-der-instanzen-in-ip-symcon)
-5. [Statusvariablen und Profile](#5-statusvariablen-und-profile)
-6. [WebFront](#6-webfront)
-7. [PHP-Befehlsreferenz](#7-php-befehlsreferenz)
+3. [Einrichten der Instanzen in IP-Symcon](#4-einrichten-der-instanzen-in-ip-symcon)
+4. [Statusvariablen und Profile](#5-statusvariablen-und-profile)
+5. [PHP-Befehlsreferenz](#7-php-befehlsreferenz)
 
 ### 1. Funktionsumfang
 
-*
+* Stellt die Verbindung über OAuth mit der Netatmo Energy Cloud her.
 
 ### 2. Vorraussetzungen
 
 - IP-Symcon ab Version 5.2
 
-### 3. Software-Installation
+### 3. Einrichten der Instanzen in IP-Symcon
 
-* Über den Module Store das 'NACloud'-Modul installieren.
-* Alternativ über das Module Control folgende URL hinzufügen
+Den Button "Registrieren" aufrufen, um eine Verbindung zum dem Netatmo Account herzustellen.
 
-### 4. Einrichten der Instanzen in IP-Symcon
+### 4. Statusvariablen und Profile
 
- Unter 'Instanz hinzufügen' ist das 'NACloud'-Modul unter dem Hersteller 'Netatmo' aufgeführt.
-
-__Konfigurationsseite__:
-
-Name     | Beschreibung
--------- | ------------------
-         |
-         |
-
-### 5. Statusvariablen und Profile
-
-Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzelner kann zu Fehlfunktionen führen.
-
-#### Statusvariablen
-
-Name   | Typ     | Beschreibung
------- | ------- | ------------
-       |         |
-       |         |
-
-#### Profile
-
-Name   | Typ
------- | -------
-       |
-       |
-
-### 6. WebFront
-
-Die Funktionalität, die das Modul im WebFront bietet.
+Keine Variablen und Profile vorhanden.
 
 ### 7. PHP-Befehlsreferenz
 
-`boolean NA_BeispielFunktion(integer $InstanzID);`
-Erklärung der Funktion.
-
-Beispiel:
-`NA_BeispielFunktion(12345);`
+Keine Funktionen vorhanden.

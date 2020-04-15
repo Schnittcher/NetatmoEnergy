@@ -1,66 +1,50 @@
-# NASplitter
-Beschreibung des Moduls.
+# Netatmo Energy Splitter
+Ist für die Verbindung zwischen Netatmo Energy Cloud und den Geräten / Konfiguratoren zuständig.
 
 ### Inhaltsverzeichnis
 
 1. [Funktionsumfang](#1-funktionsumfang)
 2. [Voraussetzungen](#2-voraussetzungen)
-3. [Software-Installation](#3-software-installation)
-4. [Einrichten der Instanzen in IP-Symcon](#4-einrichten-der-instanzen-in-ip-symcon)
-5. [Statusvariablen und Profile](#5-statusvariablen-und-profile)
-6. [WebFront](#6-webfront)
-7. [PHP-Befehlsreferenz](#7-php-befehlsreferenz)
+3. [Einrichten der Instanzen in IP-Symcon](#4-einrichten-der-instanzen-in-ip-symcon)
+4. [Statusvariablen und Profile](#5-statusvariablen-und-profile)
+5. [PHP-Befehlsreferenz](#7-php-befehlsreferenz)
 
 ### 1. Funktionsumfang
 
-*
+* Verbindet Netatmo Energy Cloud und die Geräte / Konfiguratoren miteinander
+* Ruft in vorgegebenem Intervall den Status der Geräte ab
 
 ### 2. Vorraussetzungen
 
 - IP-Symcon ab Version 5.2
 
-### 3. Software-Installation
+### 3. Einrichten der Instanzen in IP-Symcon
 
-* Über den Module Store das 'NASplitter'-Modul installieren.
-* Alternativ über das Module Control folgende URL hinzufügen
-
-### 4. Einrichten der Instanzen in IP-Symcon
-
- Unter 'Instanz hinzufügen' ist das 'NASplitter'-Modul unter dem Hersteller 'Netatmo' aufgeführt.
+Der Splitter wird automatisch über den Configurator angelegt, sollte dieser noch nicht vorhanden sein.
 
 __Konfigurationsseite__:
 
 Name     | Beschreibung
 -------- | ------------------
-         |
-         |
+Home ID| Die ID des Homes, für welchen der Splitter verwendet werden soll.
+Intervall| Gibt an in welchem Sekundentakt der Status abgefragt werden soll.
 
-### 5. Statusvariablen und Profile
+### 4. Statusvariablen und Profile
 
-Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzelner kann zu Fehlfunktionen führen.
+Keine Variablen und Profile vorhanden.
 
-#### Statusvariablen
+### 5. PHP-Befehlsreferenz
 
-Name   | Typ     | Beschreibung
------- | ------- | ------------
-       |         |
-       |         |
-
-#### Profile
-
-Name   | Typ
------- | -------
-       |
-       |
-
-### 6. WebFront
-
-Die Funktionalität, die das Modul im WebFront bietet.
-
-### 7. PHP-Befehlsreferenz
-
-`boolean NA_BeispielFunktion(integer $InstanzID);`
-Erklärung der Funktion.
+`NA_updateStatus($InstanceID);`
+Ruft den Status ab und schickt diesen an alle Child Instanzen.
 
 Beispiel:
-`NA_BeispielFunktion(12345);`
+
+`NA_updateStatus(12345);`
+
+`NA_updateSchedules($InstanceID);`
+Ruft die Zeitpläne ab und schickt diesen an die Child Instanz.
+
+Beispiel:
+
+`NA_updateSchedules(12345);`

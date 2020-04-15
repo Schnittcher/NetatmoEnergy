@@ -1,5 +1,5 @@
-# HCConfigurator
-Mit dem Configurator ist es möglich die einzelnen Geräte in IP-Symcon anzulegen.
+# Netatmo Energy Konfigurator
+Mit dem Konfigurator ist es möglich die einzelnen Geräte in IP-Symcon anzulegen.
 
 ### Inhaltsverzeichnis
 
@@ -19,13 +19,13 @@ Mit dem Configurator ist es möglich die einzelnen Geräte in IP-Symcon anzulege
 
 ### 3. Einrichten der Instanzen in IP-Symcon
 
-Über die Discovery Instanz können die einzelnen Configuratoren zu den im Legrand Account hinterlegten Gateways angelegt werden.
+Über die Discovery Instanz können die einzelnen Konfiguratoren zu dem im Netatmo Energy Account hinterlegten Haus angelegt werden.
 
 __Konfigurationsseite__:
 
 Name     | Beschreibung
 -------- | ------------------
-PlantID  | Die Plant ID des Gateways, wird über die Discovery Instanz gefüllt.
+Home ID  | Die Home ID des Hauses, wird über die Discovery Instanz gefüllt.
 
 ### 4. Statusvariablen und Profile
 
