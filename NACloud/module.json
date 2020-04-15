@@ -4,7 +4,7 @@
     "type": 1,
     "vendor": "Netatmo",
     "aliases": [
-        "Netatmo Cloud"
+        "Netatmo Energy Cloud"
     ],
     "parentRequirements": [],
     "childRequirements": [

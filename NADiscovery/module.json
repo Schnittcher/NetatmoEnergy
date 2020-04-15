@@ -3,7 +3,9 @@
     "name": "NADiscovery",
     "type": 5,
     "vendor": "Netatmo",
-    "aliases": [],
+    "aliases": [
+        "Netatmo Energy Discovery"
+    ],
     "parentRequirements": [
         "{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}"
     ],

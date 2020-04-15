@@ -4,7 +4,7 @@
     "type": 2,
     "vendor": "Netatmo",
     "aliases": [
-        "Netatmo Splitter"
+        "Netatmo Energy Splitter"
     ],
     "parentRequirements": [
         "{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}"
