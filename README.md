@@ -21,13 +21,13 @@
 
 ## 2. Enthaltene Module
 
-* [Netatmo Energy Cloud](Netatmo Energy Cloud/README.md)
-* [Netatmo Energy Device](Netatmo Energy Device/README.md)
-* [Netatmo Energy Discovery](Netatmo Energy Discovery/README.md)
-* [Netatmo Energy Home](Netatmo Energy Home/README.md)
-* [Netatmo Energy Konfigurator](Netatmo Energy Konfigurator/README.md)
-* [Netatmo Energy Room](Netatmo Energy Room/README.md)
-* [Netatmo Energy Splitter](Netatmo Energy Splitter/README.md)
+* [Netatmo Energy Cloud](Netatmo%20Energy%20Cloud/README.md)
+* [Netatmo Energy Device](Netatmo%20Energy%20Device/README.md)
+* [Netatmo Energy Discovery](Netatmo%20Energy%20Discovery/README.md)
+* [Netatmo Energy Home](Netatmo%20Energy%20Home/README.md)
+* [Netatmo Energy Konfigurator](Netatmo%20Energy%20Konfigurator/README.md)
+* [Netatmo Energy Room](Netatmo%20Energy%20Room/README.md)
+* [Netatmo Energy Splitter](Netatmo%20Energy%20Splitter/README.md)
 
 ## 3. Installation
 Installation über den IP-Symcon Module Store.
