@@ -7,7 +7,7 @@ trait CloudDataHelper
     {
         return $this->checkResult(json_decode($this->SendDataToParent(json_encode([
             'DataID'   => '{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}',
-            'HomeID'  => $homeid,
+            'HomeID'   => $homeid,
             'Endpoint' => $endpoint,
             'Payload'  => ''
         ]))));
@@ -17,7 +17,7 @@ trait CloudDataHelper
     {
         return $this->checkResult(json_decode($this->SendDataToParent(json_encode([
             'DataID'   => '{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}',
-            'HomeID'  => $homeid,
+            'HomeID'   => $homeid,
             'Endpoint' => $endpoint,
             'Payload'  => $payload
         ]))));

@@ -67,7 +67,7 @@ class NetatmoEnergyKonfigurator extends IPSModule
                     [
                         'moduleID'      => $GUIDs['Home'],
                         'configuration' => [],
-                        'location' => $location
+                        'location'      => $location
                     ],
                     [
                         'moduleID'      => '{19718E4A-B0D5-21ED-2106-B48BB368C14E}', // Splitter
@@ -166,7 +166,6 @@ class NetatmoEnergyKonfigurator extends IPSModule
         }
         return 0;
     }
-
 
     private function searchNAHome()
     {

@@ -127,7 +127,7 @@ class NetatmoEnergyCloud extends IPSModule
         $result = file_get_contents('https://oauth.ipmagic.de/access_token/' . $this->oauthIdentifer, false, $context);
 
         $data = json_decode($result);
-        
+
         if (!isset($data->token_type) || $data->token_type != 'Bearer') {
             //die('Bearer Token expected');
         }

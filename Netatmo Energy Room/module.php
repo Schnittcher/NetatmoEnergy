@@ -1,16 +1,17 @@
 <?php
+
 declare(strict_types=1);
 include_once __DIR__ . '/../libs/data.php';
     class NetatmoEnergyRoom extends IPSModule
     {
         use SplitterDataHelper;
-        
+
         public function Create()
         {
             //Never delete this line!
             parent::Create();
 
-            $this->ConnectParent("{19718E4A-B0D5-21ED-2106-B48BB368C14E}");
+            $this->ConnectParent('{19718E4A-B0D5-21ED-2106-B48BB368C14E}');
             $this->RegisterPropertyString('RoomID', '');
 
             $this->RegisterVariableFloat('measured_temperature', $this->Translate('Measured Temperature'), '~Temperature', 0);
@@ -50,7 +51,7 @@ include_once __DIR__ . '/../libs/data.php';
             parent::ApplyChanges();
             $this->SetReceiveDataFilter('.*rooms.*');
         }
-        
+
         public function RequestAction($Ident, $Value)
         {
             switch ($Ident) {
@@ -58,10 +59,10 @@ include_once __DIR__ . '/../libs/data.php';
                         switch ($Value) {
                             case 1:
                                 $temperature = $this->GetValue('setpoint_temperature');
-                                $result = $this->postData('/setroomthermpoint?home_id={homeid}&room_id='.$this->ReadPropertyString('RoomID').'&mode=manual&temp='.$temperature);
+                                $result = $this->postData('/setroomthermpoint?home_id={homeid}&room_id=' . $this->ReadPropertyString('RoomID') . '&mode=manual&temp=' . $temperature);
                                 break;
                             case 2:
-                                $result = $this->postData('/setroomthermpoint?home_id={homeid}&room_id='.$this->ReadPropertyString('RoomID').'&mode=home');
+                                $result = $this->postData('/setroomthermpoint?home_id={homeid}&room_id=' . $this->ReadPropertyString('RoomID') . '&mode=home');
                                 break;
                             case 3:
                                 //Max
@@ -94,7 +95,7 @@ include_once __DIR__ . '/../libs/data.php';
                         }
                         break;
                 case 'setpoint_temperature':
-                    $result = $this->postData('/setroomthermpoint?home_id={homeid}&room_id='.$this->ReadPropertyString('RoomID').'&mode=manual&temp='.$Value);
+                    $result = $this->postData('/setroomthermpoint?home_id={homeid}&room_id=' . $this->ReadPropertyString('RoomID') . '&mode=manual&temp=' . $Value);
                     if (@$result->status == 'ok') {
                         $this->SetValue('setpoint_mode', 1);
                         $this->SetValue('setpoint_temperature', $Value);
@@ -111,7 +112,7 @@ include_once __DIR__ . '/../libs/data.php';
             if (!property_exists($body, 'home')) {
                 return;
             }
-            
+
             $rooms = $body->home->rooms;
             $this->SendDebug('JSON', $JSONString, 0);
             foreach ($rooms as $key => $room) {

@@ -31,9 +31,9 @@ include_once __DIR__ . '/../libs/data.php';
                 foreach ($result->body->homes as $home) {
                     $AddValue = [
                         'name'            => $home->name,
-                        'home'       => $home->name,
+                        'home'            => $home->name,
                         'country'         => $home->country,
-                        'rooms'         => count($home->rooms),
+                        'rooms'           => count($home->rooms),
                         'devices'         => count($home->modules),
                         'instanceID'      => $this->searchHome($home->id)
                     ];

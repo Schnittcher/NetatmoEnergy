@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 include_once __DIR__ . '/../libs/data.php';
 
     class NetatmoEnergyHome extends IPSModule
@@ -9,7 +11,7 @@ include_once __DIR__ . '/../libs/data.php';
             //Never delete this line!
             parent::Create();
 
-            $this->ConnectParent("{19718E4A-B0D5-21ED-2106-B48BB368C14E}");
+            $this->ConnectParent('{19718E4A-B0D5-21ED-2106-B48BB368C14E}');
 
             $this->RegisterAttributeString('Schedules', '');
             //Scene Profile for Groups
@@ -49,7 +51,7 @@ include_once __DIR__ . '/../libs/data.php';
             parent::ApplyChanges();
             $this->SetReceiveDataFilter('.*homes.*');
         }
-        
+
         public function RequestAction($Ident, $Value)
         {
             switch ($Ident) {
