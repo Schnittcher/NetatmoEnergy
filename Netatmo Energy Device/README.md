@@ -49,7 +49,7 @@ Keine Vorhanden.
 
 ### 6. WebFront
 
-Über das Webfront kann das Licht ein- bzw. ausgeschaltet oder gedimmt werden.
+Über das Webfront können die Statuswerte eingesehen werden.
 
 ### 7. PHP-Befehlsreferenz
 
