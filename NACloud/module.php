@@ -128,8 +128,6 @@ class NACloud extends IPSModule
 
         $data = json_decode($result);
         
-        IPS_LogMessage('1', print_r($data, true));
-
         if (!isset($data->token_type) || $data->token_type != 'Bearer') {
             //die('Bearer Token expected');
         }

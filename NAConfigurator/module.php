@@ -31,8 +31,6 @@ class NAConfigurator extends IPSModule
         if ($this->HasActiveParent()) {
             $result = $this->getData('/homesdata?home_id={homeid}');
 
-            IPS_LogMessage('HomeID', print_r($result, true));
-
             if (empty($result)) {
                 return json_encode($data);
             }
