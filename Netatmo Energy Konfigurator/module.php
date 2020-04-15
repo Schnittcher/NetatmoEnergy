@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 include_once __DIR__ . '/../libs/data.php';
-class NAConfigurator extends IPSModule
+class NetatmoEnergyKonfigurator extends IPSModule
 {
     use SplitterDataHelper;
 
@@ -38,6 +38,7 @@ class NAConfigurator extends IPSModule
             $Values = [];
             $ValuesAll = [];
 
+            $GUIDs['Home'] = '{C945480C-F0C3-3D03-A8F1-7651B5C747BF}';
             $GUIDs['Room'] = '{FB29D1C4-26CF-4F36-9ED2-EDDEA87977DC}';
             $GUIDs['Device'] = '{77923143-C6A1-DD4E-BD0D-5BD7187729F3}';
             $location = 0;
@@ -54,6 +55,27 @@ class NAConfigurator extends IPSModule
                 'DisplayName'           => $this->Translate('Unsorted'),
                 'DeviceID'              => '',
                 'hwtype'                => ''
+            ];
+            $AddValueRooms[] = [
+                'id'                    => 9001,
+                'name'                  => 'Home',
+                'DisplayName'           => $this->Translate('Home'),
+                'DeviceID'              => '',
+                'hwtype'                => '',
+                'instanceID'            => $this->searchNAHome(),
+                'create'                => [
+                    [
+                        'moduleID'      => $GUIDs['Home'],
+                        'configuration' => [],
+                        'location' => $location
+                    ],
+                    [
+                        'moduleID'      => '{19718E4A-B0D5-21ED-2106-B48BB368C14E}', // Splitter
+                        'configuration' => [
+                            'HomeID' => $result->body->homes[0]->id
+                        ]
+                    ]
+                ]
             ];
             foreach ($result->body->homes[0]->rooms as $keyRoom => $room) {
                 $AddValueRooms[] = [
@@ -146,9 +168,9 @@ class NAConfigurator extends IPSModule
     }
 
 
-    private function searchHCDeviceScenes()
+    private function searchNAHome()
     {
-        $ids = IPS_GetInstanceListByModuleID('{7FD91366-6D85-C2AA-3A3E-22D097B48826}');
+        $ids = IPS_GetInstanceListByModuleID('{C945480C-F0C3-3D03-A8F1-7651B5C747BF}');
         if (array_key_exists(0, $ids)) {
             return $ids[0];
         }

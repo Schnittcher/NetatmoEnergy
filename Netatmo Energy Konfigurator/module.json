@@ -1,11 +1,9 @@
 {
-    "id": "{77923143-C6A1-DD4E-BD0D-5BD7187729F3}",
-    "name": "NADevice",
-    "type": 3,
+    "id": "{0F90DCFC-B606-4D94-A579-49AD85AC5A78}",
+    "name": "Netatmo Energy Konfigurator",
+    "type": 4,
     "vendor": "Netatmo",
-    "aliases": [
-        "Netatmo Device"
-    ],
+    "aliases": [],
     "parentRequirements": [
         "{2FD9D574-BB1D-EE43-6B7F-304C8940DBD9}"
     ],
@@ -13,6 +11,6 @@
     "implemented": [
         "{CE473B2A-C23E-9561-BC09-6A09E286C22D}"
     ],
-    "prefix": "NA",
+    "prefix": "HC",
     "url": "https://deinsmarthome.info"
 }

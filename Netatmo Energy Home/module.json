@@ -1,11 +1,9 @@
 {
-    "id": "{FB29D1C4-26CF-4F36-9ED2-EDDEA87977DC}",
-    "name": "NARoom",
+    "id": "{C945480C-F0C3-3D03-A8F1-7651B5C747BF}",
+    "name": "Netatmo Energy Home",
     "type": 3,
     "vendor": "Netatmo",
-    "aliases": [
-        "Netatmo Room"
-    ],
+    "aliases": [],
     "parentRequirements": [
         "{2FD9D574-BB1D-EE43-6B7F-304C8940DBD9}"
     ],

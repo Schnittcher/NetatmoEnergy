@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 include_once __DIR__ . '/../libs/data.php';
-    class NADiscovery extends IPSModule
+    class NetatmoEnergyDiscovery extends IPSModule
     {
         use CloudDataHelper;
 

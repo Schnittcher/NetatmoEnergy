@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 include_once __DIR__ . '/../libs/data.php';
-    class NARoom extends IPSModule
+    class NetatmoEnergyRoom extends IPSModule
     {
         use SplitterDataHelper;
         

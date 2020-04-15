@@ -1,11 +1,9 @@
 {
     "id": "{19718E4A-B0D5-21ED-2106-B48BB368C14E}",
-    "name": "NASplitter",
+    "name": "Netatmo Energy Splitter",
     "type": 2,
     "vendor": "Netatmo",
-    "aliases": [
-        "Netatmo Energy Splitter"
-    ],
+    "aliases": [],
     "parentRequirements": [
         "{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}"
     ],

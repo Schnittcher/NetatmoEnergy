@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-class NACloud extends IPSModule
+class NetatmoEnergyCloud extends IPSModule
 {
     private $oauthIdentifer = 'netatmo';
     private $apiURL = 'https://api.netatmo.net/api';

@@ -1,7 +1,7 @@
 <?php
 include_once __DIR__ . '/../libs/data.php';
 
-    class NAHome extends IPSModule
+    class NetatmoEnergyHome extends IPSModule
     {
         use SplitterDataHelper;
         public function Create()

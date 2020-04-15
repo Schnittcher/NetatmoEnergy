@@ -1,11 +1,9 @@
 {
     "id": "{B3186530-616A-6768-AA32-57B03335D4A7}",
-    "name": "NADiscovery",
+    "name": "Netatmo Energy Discovery",
     "type": 5,
     "vendor": "Netatmo",
-    "aliases": [
-        "Netatmo Energy Discovery"
-    ],
+    "aliases": [],
     "parentRequirements": [
         "{49AF9FD0-B49D-4E9B-BCDF-8FDBCC23E0B5}"
     ],

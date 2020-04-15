@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 include_once __DIR__ . '/../libs/data.php';
-class NASplitter extends IPSModule
+class NetatmoEnergySplitter extends IPSModule
 {
     use CloudDataHelper;
 

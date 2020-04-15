@@ -1,5 +1,5 @@
 <?php
-    class NADevice extends IPSModule
+    class NetatmoEnergyDevice extends IPSModule
     {
         public function Create()
         {
@@ -32,6 +32,10 @@
 
         public function ReceiveData($JSONString)
         {
+            $body = json_decode($JSONString)->Buffer->body;
+            if (!property_exists($body, 'home')) {
+                return;
+            }
             $modules = json_decode($JSONString)->Buffer->body->home->modules;
             
             foreach ($modules as $key => $module) {
