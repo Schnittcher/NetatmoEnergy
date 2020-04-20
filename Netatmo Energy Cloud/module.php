@@ -27,11 +27,7 @@ class NetatmoEnergyCloud extends IPSModule
 
         $this->RegisterOAuth($this->oauthIdentifer);
 
-        if ($this->ReadAttributestring('Token') == '') {
-            $this->SetStatus(IS_INACTIVE);
-        } else {
-            $this->SetStatus(IS_ACTIVE);
-        }
+        $this->checkToken();
     }
 
     public function ForwardData($JSONString)
@@ -80,7 +76,7 @@ class NetatmoEnergyCloud extends IPSModule
 
             $this->SendDebug('ProcessOAuthData', "OK! Let's save the Refresh Token permanently", 0);
             $this->WriteAttributeString('Token', $token);
-            IPS_ApplyChanges($this->InstanceID);
+            $this->checkToken();
         } else {
 
                 //Just print raw post data!
@@ -236,5 +232,14 @@ class NetatmoEnergyCloud extends IPSModule
 
         $context = stream_context_create($opts);
         return file_get_contents($url, false, $context);
+    }
+
+    private function checkToken()
+    {
+        if ($this->ReadAttributestring('Token') == '') {
+            $this->SetStatus(IS_INACTIVE);
+        } else {
+            $this->SetStatus(IS_ACTIVE);
+        }
     }
 }
