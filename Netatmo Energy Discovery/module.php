@@ -29,12 +29,21 @@ include_once __DIR__ . '/../libs/data.php';
                 $Values = [];
 
                 foreach ($result->body->homes as $home) {
+                    $rooms = '-';
+                    $devices = '-';
+                    if (property_exists($home,'name')) {
+                        if (property_exists($home,'rooms')) {
+                            $rooms = count($home->rooms);
+                        }
+                        if (property_exists($home,'devices')) {
+                            $devices = count($home->devices);
+                        }
                     $AddValue = [
                         'name'            => $home->name,
                         'home'            => $home->name,
                         'country'         => $home->country,
-                        'rooms'           => count($home->rooms),
-                        'devices'         => count($home->modules),
+                        'rooms'           => $rooms,
+                        'devices'         => $devices,
                         'instanceID'      => $this->searchHome($home->id)
                     ];
 
@@ -55,6 +64,7 @@ include_once __DIR__ . '/../libs/data.php';
                     $Values[] = $AddValue;
                 }
                 $data['actions'][0]['values'] = $Values;
+            }
             }
             return json_encode($data);
         }

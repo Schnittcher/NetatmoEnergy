@@ -215,8 +215,10 @@ class NetatmoEnergyCloud extends IPSModule
             ]
         ];
         $context = stream_context_create($opts);
-
-        return file_get_contents($url, false, $context);
+        
+        $result = file_get_contents($url, false, $context);
+        $this->SendDebug('GetData :: Result',$result,0);
+        return $result;
     }
 
     private function PostData($url, $content)
